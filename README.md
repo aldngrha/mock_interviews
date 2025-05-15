@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 Prepwise
 
-## Getting Started
+Prepwise is a modern AI-powered application built with Next.js and Vapi AI, enabling intelligent voice interaction for enhanced user experiences. It leverages the latest frontend technologies and best development practices to deliver speed, flexibility, and scalability.
 
-First, run the development server:
+---
+
+## 🚀 Tech Stack
+
+- **Framework:** Next.js 15 (with Turbopack)
+- **Language:** TypeScript, JavaScript (React 19)
+- **Styling:** Tailwind CSS v4
+- **Forms:** React Hook Form, Zod
+- **UI Components:** Shadcn/UI
+- **Date Utilities:** dayjs
+- **AI / Voice:** Vapi AI SDK, Google Gemini
+- **BaaS:** Firebase
+- **Linting:** Eslint
+
+---
+
+## 📦 **Installation**
+
+Make sure you have **pnpm** installed, then run:
+## 📦 Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🧑‍💻 Development
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To start the development server with Turbopack:
 
-## Learn More
+```bash
+pnpm dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🏗️ Production Build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Build the application for production:
 
-## Deploy on Vercel
+```bash
+pnpm build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Start the production server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+pnpm start
+```
+
+---
+
+## 🧪 Linting
+
+Run ESLint:
+
+```bash
+pnpm lint
+```
+
+---
+
+## 🗣️ Voice AI Integration (Vapi.ai)
+
+This project uses the Vapi SDK to integrate real-time voice AI features.  
+Documentation: https://docs.vapi.ai
+
+### Example usage
+
+```ts
+import { Vapi } from '@vapi-ai/web';
+
+const vapi = new Vapi({
+  apiKey: 'YOUR_API_KEY',
+});
+
+vapi.start({
+  conversationId: 'your-convo-id',
+});
+```
+
+You can customize voice agents, conversations, and event handling based on the Vapi documentation.
+
+---
+
+## 📜 License
+
+MIT License
